@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="top-bar">
+      <i class="material-icons">favorite_border</i>
+      <span>Now Playing</span>
+      <i class="material-icons">add</i>
+    </div>
+
+    <div class="img-area">
+      <img src="images/P1.jpg" alt="Artist-1">
+    </div>
+
+    <div class="song-details">
+      <p class="name">Harley Bird-Home</p>
+      <p class="artist">Ariana Grande</p>
+    </div>
+
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src="Music 1.mp3"></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0.00</span>
+        <span class="maximum-duration">0.00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <i  id="repeat-plist" class="material-icons" title="playlist looped">repeat</i>
+      <i id="prev" class="material-icons prev">fast_rewind</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons next">fast_forward</i>
+      <i id="more-music" class="material-icons next">queue_music</i>
+    </div>
+
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class="list material-icons">queue_music </i>
+          <span>Music List</span>
+        </div>
+        <i class="material-icons" id="close">close</i>
+      </div>
+      <ul>
+        <li>
+          <div class="row">
+            <span>Beats</span>
+            <p>Ariana Grande</p>
+          </div>
+          <span class="audio-duration">3:13</span>
+        </li>
+        <li>
+          <div class="row">
+            <span>Tender Love Guiter</span>
+            <p>Ed Sheeran</p>
+          </div>
+          <span class="audio-duration">2:47</span>
+        </li>
+        <li>
+          <div class="row">
+            <span>Pop</span>
+            <p>Selena Gomez</p>
+          </div>
+          <span class="audio-duration">2:43</span>
+        </li>
+        <li>
+          <div class="row">
+            <span>This Whole World</span>
+            <p>Justin Bieber</p>
+          </div>
+          <span class="audio-duration">1:48</span>
+        </li>
+        <li>
+          <div class="row">
+            <span>Dance Pop</span>
+            <p>Taylor Swift</p>
+          </div>
+          <span class="audio-duration">2:27</span>
+        </li>
+        
+      </ul>
+    </div>
+
+
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
